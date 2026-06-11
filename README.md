@@ -5,8 +5,20 @@
 React
 EMotion
 
-## Correr o projeto em módulo desenvolvimento
+## Instalar dependencias
 
 ```
-npm run dev
+npm install
+```
+
+## Gerar a build
+
+```
+npm run build
+```
+
+## Executar aplicação
+
+```
+npm run start
 ```
