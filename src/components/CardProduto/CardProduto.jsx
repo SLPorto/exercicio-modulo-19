@@ -13,19 +13,19 @@ const AddToCartButton = styled.button((props) => ({
   padding: "10px",
   borderRadius: "10px",
   border: "1px solid gray",
-  backgroundColor: props.available ? "#198754" : "#6c757d",
+  backgroundColor: props.adicionado ? "#198754" : "#6c757d",
 }));
 
-function ProductCard({ name, price, available }) {
+function CardProduto({ nome, preco, adicionado }) {
   return (
     <Container>
-      <h3>{name}</h3>
-      <p>BRL {price}</p>
-      <AddToCartButton available={available}>
+      <h3>{nome}</h3>
+      <p>BRL {preco}</p>
+      <AddToCartButton adicionado={adicionado}>
         Adicionar ao carrinho
       </AddToCartButton>
     </Container>
   );
 }
 
-export default ProductCard;
+export default CardProduto;

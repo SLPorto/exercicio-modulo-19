@@ -1,4 +1,4 @@
-import ProductCard from "./components/ProductCard/ProductCard";
+import CardProduto from "./components/CardProduto/CardProduto";
 import styled from "@emotion/styled";
 
 const Container = styled.div`
@@ -11,8 +11,8 @@ function App() {
     <div>
       <h1>Exercício Módulo 19</h1>
       <Container>
-        <ProductCard name="Tênis Nike" price={399.0} available={true} />
-        <ProductCard name="Tênis Adidas" price={499.0} available={false} />
+        <CardProduto nome="Tênis Nike" preco={399.0} adicionado={true} />
+        <CardProduto nome="Tênis Adidas" preco={499.0} adicionado={false} />
       </Container>
     </div>
   );
